@@ -21,7 +21,7 @@ class WelcomeMessage extends Component
            this.timeout2 = setTimeout(() => {
              this.setState({style: {display:"none"}});
              clearInterval(this.timeout);
-           }, 6000);
+           }, 9000);
 
 
          }

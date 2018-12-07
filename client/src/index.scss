@@ -1,0 +1,525 @@
+@import url(//fonts.googleapis.com/css?family=Kalam);
+
+$fontStack: Roboto, sans-serif;
+$defaultBColour: #fff;
+$defaultFColour: #000;
+$pageWidth: 750px;
+$pageHeight: 1000px;
+
+@mixin heightWidth($h, $w){
+    height: $h;
+    width: $w;
+}
+
+
+@mixin topLeft($t, $l){
+    top: $t;
+    left: $l;
+}
+
+@mixin browserSupport($propName, $propVar){
+	-webkit-#{$propName}: $propVar;
+	-khtml-#{$propName}: $propVar;
+	-moz-#{$propName}: $propVar;
+	-ms-#{$propName}: $propVar;
+	#{$propName}: $propVar;
+}
+
+@mixin animation($anName, $sec, $style)
+{
+	$propVar: $anName + " " +  $sec + " " +  $style;
+	@include browserSupport("animation", $propVar);
+}
+
+*{
+	@include browserSupport("user-select", none);
+	-webkit-touch-callout: none;
+}
+
+html {
+    font-family: $fontStack;
+
+      height:100%;
+      width:100%;
+      overflow-x:hidden;
+      position: relative;
+
+
+
+}
+
+body {
+    margin: 0px 0px 0px 0px;
+          height:100%;
+      width:100%;
+      overflow-x:hidden;
+      position: relative;
+
+
+}
+
+#root{
+  height:100%;
+  width:100%;
+  overflow-x:hidden;
+  position: relative;
+}
+
+
+.container {
+
+  position:relative;
+  @include heightWidth($pageHeight, $pageWidth);
+  top:5px;
+  margin: 0 auto 20px auto;
+  padding: 0px 15px 0px 15px;
+  outline: 1px solid #000;
+  box-shadow: 3px 3px #999;
+}
+.animationLoad
+{
+  @include animation(paperAppear, 1s, linear);
+}
+.container2{
+  position:relative;
+  @include heightWidth(700px, $pageWidth);
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+
+
+
+
+/*
+HEADER BOARD CSS
+*/
+
+.headerBoard{
+  position: absolute;
+  @include heightWidth(150px, $pageWidth);
+  vertical-align: top;
+}
+
+
+@mixin StartUpAni($animation, $props)
+{
+  @each $percent, $vals in $animation {
+    #{$percent}{
+      @for $i from 1 through length($props) {
+          #{nth($props, $i)}: nth($vals, $i);
+      }
+    }
+  }
+}
+
+
+@keyframes paperAppear {
+
+  $animation : ( 0% : (0, translateY(5%)),
+                100% : (1, translateY(0%))
+              );
+  $props : opacity transform;
+
+  @include StartUpAni($animation, $props);
+
+  }
+
+@keyframes startUpWelcomeImg {
+
+  $stTop : 200px;
+  $stLeft : 325px;
+  $stScale : scale(2);
+
+  $animation : ( 0% : (0, $stScale, $stTop, $stLeft),
+                50% : (0, $stScale, $stTop, $stLeft),
+                65% : (1, $stScale, $stTop, $stLeft),
+                80% : (1, $stScale, $stTop, $stLeft),
+                100% : (1, scale(1), 13px, 1px)
+              );
+  $props : opacity transform top left;
+
+  @include StartUpAni($animation, $props);
+}
+
+@keyframes startUpWelcomeName {
+
+  $stTop : 215px;
+  $stLeft : 40px;
+  $stScale : 100px;
+
+  $animation : ( 0% : (0, $stScale, $stTop, $stLeft),
+                50% : (0, $stScale, $stTop, $stLeft),
+                55% : (0, $stScale, $stTop, $stLeft),
+                70% : (1, $stScale, $stTop, $stLeft),
+                80% : (1, $stScale, $stTop, $stLeft),
+                100% : (1, 73px, -160px, 146px)
+              );
+  $props : opacity font-size top left;
+
+  @include StartUpAni($animation, $props);
+
+}
+
+@keyframes startUpWelcomeMsgShowHide {
+
+
+  $animation : ( 0% : (0),
+                50% : (0),
+                60% : (1),
+                80% : (1),
+                90% : (0)
+              );
+  $props : opacity;
+
+  @include StartUpAni($animation, $props);
+
+}
+
+
+.reactColour{
+  color:#00d8ff;
+}
+
+.welcomeMessageShow{
+  opacity: 0;
+  position: relative;
+  @include topLeft(-100px, 50px);
+  text-align:center;
+  font-size: 70px;
+  font-weight: bold;
+
+  @include animation(startUpWelcomeMsgShowHide, 7s, linear);
+}
+
+
+
+.imgStartUp{
+  @include animation(startUpWelcomeImg, 3s, linear);
+}
+
+.nameStartUp{
+  @include animation(startUpWelcomeName, 3s, linear);
+}
+
+
+.ethanImg{
+  position: relative;
+  @include heightWidth(120px, 120px);
+  @include topLeft(13px, 1px);
+  border-radius: 50%;
+	background-image: url("Components/HeaderComponents/Ethan.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+
+	&:active{
+	  background-image: url("Components/HeaderComponents/Ethan2.jpg");
+	}
+
+}
+
+.nameHead{
+    position: relative;
+    @include topLeft(-160px, 146px);
+    font-size: 73px;
+}
+
+@keyframes delayShow {
+  0% {
+      opacity: 0;
+  }
+  80% {
+      opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.delayAppear{
+  @include animation(delayShow, 8s, linear);
+}
+
+*.emailHead,*.phoneHead, *[class^="hljs"] {
+	@include browserSupport("user-select", text);
+	-webkit-touch-callout: text; /* iOS Safari */
+}
+
+.contactHead{
+    position: relative;
+    @include topLeft(-195px, 190px);
+    font-size: 13px;
+}
+
+.phoneHead{
+	  position: relative;
+    left: 30px;
+}
+
+.viewButtons{
+  position:relative;
+  top:-305px;
+  float: right;
+  width: max-content;
+}
+
+
+.viewCode, div[class^="cssTemplate"]{
+  line-height: 1em;
+  width: 85px;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 4px;
+  border-style: double;
+  border-width: 2px;
+  border-color: #000;
+  text-align: center;
+
+  &:hover{
+	  /* scss darken */
+	  cursor: pointer;
+	}
+
+	&:active{
+	  border-style: inset;
+	  cursor: pointer;
+	}
+}
+
+.viewCode, .cssTemplate1{
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+.cssTemplate2{
+  font-family: 'Kalam';
+  color: #000;
+  background: linear-gradient(to right, rgba(255,210,0,0.4), rgba(200, 160, 0, 0.1) 11%, rgba(0,0,0,0) 35%, rgba(200, 160, 0, 0.1) 65%), url('paper.jpg') no-repeat;
+}
+.cssTemplate3{
+  font-family: 'Courier New';
+  color: #0f0;
+  background-color: #444;
+}
+
+
+/*
+  BODY FLIP BOARD CSS
+
+*/
+
+.flip-container {
+	position: absolute;
+	@extend %flipDimentions;
+	top: 150px;
+	perspective: 5000px;
+
+	&.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+}
+
+%flipDimentions {
+  @include heightWidth(480px, $pageWidth);
+}
+
+
+.flipper {
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+%frontback {
+  @extend %flipDimentions;
+	backface-visibility: hidden;
+	position: absolute;
+  @include topLeft(0, 0);
+}
+
+.front {
+  @extend %frontback;
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+  @extend %frontback;
+	transform: rotateY(180deg);
+}
+
+
+
+
+/*
+  CV BOARD CSS
+
+*/
+
+
+
+.button-default {
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    color: $defaultFColour;
+    font: $fontStack;
+    font-weight: bolder;
+    text-align: center;
+
+    	&:hover {
+    		color: lighten( $defaultFColour, 10% );
+    		cursor: pointer
+    	}
+      &:active {
+      	color: lighten( $defaultFColour, 20% );
+      	cursor: pointer
+      }
+
+	span {
+		width:90%;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: normal;
+	}
+
+
+}
+
+%tabs-Content
+{
+    position: absolute;
+    @include heightWidth(50px, $pageWidth);
+    display: -webkit-box;
+    vertical-align: top;
+}
+
+.content-home-tab{
+    @extend %tabs-Content;
+    z-index: 100;
+    top: 0px;
+}
+
+.content-info-tab {
+    @extend %tabs-Content;
+    z-index: -100;
+    top: 65px;
+}
+
+
+.content-info-text {
+    @extend %tabs-Content;
+    z-index: -200;
+    top:125px;
+}
+
+@mixin tabsAnimations($animationName, $action, $opSt, $opFn, $y1, $y2)
+{
+    .#{$animationName}-#{$action}  {
+        transform: translateY($y1);
+        opacity: $opSt;
+
+     &.#{$animationName}-#{$action}-active {
+    	  transform: translateY($y2);
+    	  opacity: $opFn;
+    	  transition: all 500ms ease-out;
+      }
+    }
+}
+
+
+
+$animationList: tabsAnimations textAnimations;
+@each $animationName in $animationList {
+
+    @include tabsAnimations($animationName, appear, 0, 1, -100%, 0%);
+    @include tabsAnimations($animationName, enter, 0, 1, -100%, 0%);
+    @include tabsAnimations($animationName, leave, 1, 0, 0%, -100%);
+
+}
+
+
+
+/*
+CODE BOARD CSS
+
+*/
+
+
+
+.codeViewContainer{
+  position: absolute;
+  @include heightWidth(auto, $pageWidth);
+  top: 15px;
+  outline: 2px solid #000;
+  display: -webkit-box;
+  vertical-align: top;
+}
+
+
+$codeHeight: 400px;
+$codeWidth: 600px;
+
+.codeListContainer{
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-overflow: clip;
+  @include heightWidth($codeHeight, 150px);
+
+  span{
+    overflow-x: hidden;
+    text-overflow: clip;
+  }
+}
+
+
+.codeListItem{
+  border-radius: 5px;
+  position: relative;
+  @include heightWidth(auto, initial);
+  margin: 4px;
+  padding: 4px 0px;
+  box-shadow: 0 0 0 1px #555;
+	background-color:$defaultBColour;
+  font-size: 15px;
+  overflow:hidden;
+
+  span{
+	  margin: 2px;
+	  padding: 2px;
+	}
+
+  &:hover{
+	  background-color:darken( $defaultBColour, 10% );
+	}
+
+
+	&:active,
+	&.active{
+	  background-color:darken( $defaultBColour, 20% );
+	}
+
+}
+
+
+.codeFileView
+{
+  position: relative;
+  @include heightWidth($codeHeight, $codeWidth);
+
+	pre
+	{
+	  position:relative;
+	  @include heightWidth($codeHeight, $codeWidth);
+	  margin: 0;
+
+		code
+		{
+		  position:relative;
+		  @include heightWidth($codeHeight - 13, $codeWidth - 13);
+		  margin: 0;
+		}
+	}
+}

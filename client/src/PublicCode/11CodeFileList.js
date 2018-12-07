@@ -26,7 +26,7 @@ class CodeFileList extends Component {
     i == this.state.activeButton ?  className = "codeListItem active" : className = "codeListItem"
 
     return(
-            <CodeListItem className={className} loadFilePropFunc={() => this.handleLoadFile(i)} key={i} id={i} fileTitle={fileName} />
+            <CodeListItem className={className} loadFilePropFunc={() => this.handleLoadFile(i)} key={i} id={i} fileTitle={fileName.substring(2)} />
           );
   }
 
@@ -46,7 +46,7 @@ class CodeFileList extends Component {
   render() {
     return (
       <div className="codeListContainer">
-        File select...
+        <span>File select...</span>
         {this.state.files.map(this.buildItems.bind(this))}
       </div>
     );

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import TabsLevel1 from './TabsLevel1';
-import TabsLevel2 from './TabsLevel2';
-import DisplayLevel from './DisplayLevel';
+import CvDisplay from './CvDisplay';
 import {CVinfo} from './cvinfo';
 
 
@@ -57,10 +55,21 @@ class CvContainer extends Component {
 
     return (
       <div >
-        <TabsLevel1 info={CVinfo} renderLevel2={this.renderTabsLevel2.bind(this)} renderDisplay={this.renderDisplayOnly.bind(this)} />
-        <TabsLevel2 displayThis={this.state.display2} info={this.state.lev2info} renderDisplay={this.renderDisplayLevel.bind(this)}  />
-        <TabsLevel2 displayThis={this.state.display2} info={this.state.lev2info} renderDisplay={this.renderDisplayLevel.bind(this)}  />
-        <DisplayLevel displayThis={this.state.display3} info={this.state.continfo} heightTop={this.state.topPX} />
+        <CvDisplay
+          classNames="board content-home-tab"  transNames="homeAnimations"
+          info={CVinfo} heightTop={0}
+          displayThis={true}
+          renderLevel2={this.renderTabsLevel2.bind(this)}
+          renderDisplay={this.renderDisplayOnly.bind(this)} />
+        <CvDisplay
+          classNames="board content-info-tab"  transNames="tabsAnimations"
+          info={this.state.lev2info} heightTop={70}
+          displayThis={this.state.display2}
+          renderDisplay={this.renderDisplayLevel.bind(this)}  />
+        <CvDisplay
+          classNames="board content-info-text"  transNames="textAnimations"
+          info={this.state.continfo} heightTop={this.state.topPX}
+          displayThis={this.state.display3} />
       </div>
 
     );

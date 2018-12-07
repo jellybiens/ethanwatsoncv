@@ -46,7 +46,7 @@ class CodeFileList extends Component {
   render() {
     return (
       <div className="codeListContainer">
-        File select...
+        <span>File select...</span>
         {this.state.files.map(this.buildItems.bind(this))}
       </div>
     );
