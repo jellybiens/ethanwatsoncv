@@ -13,7 +13,6 @@
     "node": "10.6.x",
     "npm": "6.1.x"
   },
- ,
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
