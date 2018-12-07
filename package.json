@@ -9,6 +9,11 @@
     "start": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
+  "engines": {
+    "node": "10.6.x",
+    "npm": "6.1.x"
+  },
+ ,
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
