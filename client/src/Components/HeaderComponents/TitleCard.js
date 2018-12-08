@@ -34,9 +34,9 @@ console.log(viewID);
               <p className="contactHead delayAppear"><span className="emailHead">email: ethanwatson2603@outlook.com</span><span className="phoneHead">phone: +447480309550</span></p>
               <div className="viewButtons delayAppear">
               <div className="viewCode" onClick={() => this.props.changeView()}>{this.props.buttonText}</div>
-              <div className="cssTemplate1" onClick={() => this.changePageCSS(1)} >CSS1</div>
-              <div className="cssTemplate2" onClick={() => this.changePageCSS(2)} >CSS2</div>
-              <div className="cssTemplate3" onClick={() => this.changePageCSS(3)} >CSS3</div>
+              <div className="cssTemplate1" onClick={() => this.changePageCSS(1)} >CSS Paper</div>
+              <div className="cssTemplate2" onClick={() => this.changePageCSS(2)} >CSS Papyrus</div>
+              <div className="cssTemplate3" onClick={() => this.changePageCSS(3)} >CSS CRT</div>
 
 
 
