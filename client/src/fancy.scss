@@ -49,7 +49,7 @@ $radialBG: 250;
 %papyrus1BeforeAfter {
   @extend %papyrus-BeforeAfter;
   @include heightWidth(3px, $pageHeight);
-  top: 309px;
+  top: 500px;
 }
 
 %papyrus2BeforeAfter {
@@ -115,12 +115,12 @@ $radialBG: 250;
   &:before {
     @extend %papyrus1BeforeAfter;
   transform: rotate(270deg);
-    left: -50%;
+    left: -64%;
   }
   &:after{
     @extend %papyrus1BeforeAfter;
   transform: rotate(90deg);
-    right: -50%;
+    right: -64%;
   }
   .papyrus-box1{
     @extend %papyrus-box-Include;
