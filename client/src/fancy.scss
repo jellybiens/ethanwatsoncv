@@ -42,19 +42,19 @@ $radialBG: 250;
 %papyrus-BeforeAfter{
   content: "";
   position: absolute;
-  @include heightWidth(3px, 100%);
   background-color: hsl($radialBG, 100%, 27%);
   -webkit-clip-path: polygon(0% 0%, 5% 200%, 10% 0%, 15% 100%, 20% 0%, 25% 200%, 30% 0%, 35% 400%, 40% 0%, 45% 100%, 50% 0%, 55% 100%, 60% 0%, 65% 100%, 70% 0%, 75% 100%, 80% 0%, 85% 100%, 90% 0%, 95% 100%, 100% 0%);
 }
 
 %papyrus1BeforeAfter {
   @extend %papyrus-BeforeAfter;
+  @include heightWidth(3px, $pageHeight);
   top: 309px;
-  transform: rotate(90deg);
 }
 
 %papyrus2BeforeAfter {
   @extend %papyrus-BeforeAfter;
+  @include heightWidth(3px, 100%);
 }
 
 
@@ -114,10 +114,12 @@ $radialBG: 250;
 
   &:before {
     @extend %papyrus1BeforeAfter;
+  transform: rotate(270deg);
     left: -50%;
   }
   &:after{
     @extend %papyrus1BeforeAfter;
+  transform: rotate(90deg);
     right: -50%;
   }
   .papyrus-box1{
