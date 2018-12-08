@@ -21,10 +21,13 @@ class TitleCard extends Component
       this.props.changeView();
     }
 
-    changePageCSS(viewID){
-console.log(viewID);
-      this.props.changeCSS(viewID);
-    }
+
+          comingSoon(){
+
+            //"Changeable Styling coming soon!"
+            //                <div className="cssTemplates" >Abc</div>
+            //                <div className="cssTemplates" >Abc</div>
+          }
 
          render() {
         return (
@@ -33,13 +36,10 @@ console.log(viewID);
               <h1 className="nameHead nameStartUp">Ethan Watson</h1>
               <p className="contactHead delayAppear"><span className="emailHead">email: ethanwatson2603@outlook.com</span><span className="phoneHead">phone: +447480309550</span></p>
               <div className="viewButtons delayAppear">
+              <div>
+
+              </div>
               <div className="viewCode" onClick={() => this.props.changeView()}>{this.props.buttonText}</div>
-              <div className="cssTemplate1" onClick={() => this.changePageCSS(1)} >CSS1</div>
-              <div className="cssTemplate2" onClick={() => this.changePageCSS(2)} >CSS2</div>
-              <div className="cssTemplate3" onClick={() => this.changePageCSS(3)} >CSS3</div>
-
-
-
               </div>
 
               <WelcomeMessage />

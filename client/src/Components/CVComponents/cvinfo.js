@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export const CVinfo = {
-  "id": 0,
-  "title": "Information",
-  "type": "tabs",
-  "info": [
+export const CVinfo = [
     {
         "id": 1,
         "title": "Personal",
@@ -142,4 +138,3 @@ export const CVinfo = {
         ]
     }
 ]
-}
