@@ -15,7 +15,7 @@ class WelcomeMessage extends Component
            this.timeout = setInterval(() => {
              let currentIdx = this.state.textIdx;
              this.setState({ textIdx: currentIdx + 1 });
-           }, 500);
+           }, 650);
 
 
            this.timeout2 = setTimeout(() => {
@@ -27,7 +27,7 @@ class WelcomeMessage extends Component
          }
 
          render() {
-           const welcomeText = ['Bun venit', 'Welcome', 'Bienvenu', 'Willkommen'];
+           const welcomeText = ['Willkommen', 'Bun venit', 'Welcome', 'Bienvenu'];
            let welcomeChange = welcomeText[this.state.textIdx % welcomeText.length];
 
         return (
