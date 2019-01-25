@@ -100,6 +100,30 @@ HEADER BOARD CSS
   vertical-align: top;
 }
 
+.links-container{
+  .links{
+    display:block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    .githA{margin: 2px !important;}
+    a{
+      float:right;
+      margin:3px;
+      z-index:10;
+      img{
+        @include heightWidth(18px,18px);
+        border-radius: 25%;
+        border: 1px solid #111;
+        position:relative;
+        top:2px;
+      }
+      .gith{
+        @include heightWidth(20px !important,20px !important);
+      }
+    }
+  }
+}
 
 @mixin StartUpAni($animation, $props)
 {
@@ -412,6 +436,14 @@ HEADER BOARD CSS
     @extend %tabs-Content;
     z-index: -200;
     top:125px;
+
+    div{    margin-top: 5px;
+            margin-left: 40px;
+            margin-right: 40px;
+
+          h4{margin-bottom: 0px;}
+
+          }
 }
 
 @mixin tabsAnimations($animationName, $action, $opSt, $opFn, $y1, $y2)

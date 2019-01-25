@@ -12,9 +12,9 @@ export const CVinfo = {
         "type": "info",
         "info": [
                   <div><h4>A competent and enthusiastic Software Developer and Computing graduate from Southampton Solent University with an aptitude for meeting high quality standards in a set time frame.</h4><br />
-                  <h4>Energetic and articulate, able to work and deliver whether working on ones own initiative or as a team member. Confident in client facing roles as required.</h4><br />
-                  <h4>Looking for a role within a software development environment where technical skills can be applied and developed further.</h4></div>
-                ]
+                  <h4>Energetic and articulate, able to work and deliver whether working on ones own initiative or as a team member. Confident in client facing roles as required.</h4></div>
+                ],
+        "_comment": "Looking for a role within a software development environment where technical skills can be applied and developed further.</h4><br />"
     },
     {
         "id": 2,
