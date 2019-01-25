@@ -111,6 +111,7 @@ HEADER BOARD CSS
       float:right;
       margin:3px;
       z-index:10;
+      cursor:pointer;
       img{
         @include heightWidth(18px,18px);
         border-radius: 25%;
@@ -246,6 +247,7 @@ HEADER BOARD CSS
     position: relative;
     @include topLeft(-160px, 146px);
     font-size: 73px;
+    pointer-events: none;
 }
 
 @keyframes delayShow {
