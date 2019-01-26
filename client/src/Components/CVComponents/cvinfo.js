@@ -34,7 +34,7 @@ export const CVinfo = {
                 "title": "Programming",
                 "type": "info",
                 "info": [
-                        <div><h4>Object Oriented Programming</h4> <h5>Developing object orientated programs with experience in Python C#, VB and Java. </h5><h5>Past projects and assignments include the development of web application and booking and time management with use of GUI libraries and amending or improving previously created programs that contain faults within time constraints.</h5></div>
+                        <div><h4>Object Oriented Programming</h4> <h5>Developing object orientated programs with experience in C#, VB, Python and Java.  </h5><h5>Past projects include the development of web application and booking and time management software with use of GUI libraries and amending or improving previously created programs that contain faults.</h5></div>
                       ]
             },
             {
@@ -42,7 +42,7 @@ export const CVinfo = {
                 "title": "Web Technologies",
                 "type": "info",
                 "info": [
-                  <div><h4>Website and Web App Technologies</h4> <h5>Experience in Node, React, Redux, JavaScript, AJAX, jQuery, Bootstrap, HTML5, SASS, CSS, .NET </h5><h5>Past projects and assignments have included creating dynamic websites and applications for use with consultant-patient encounter income monitoring, blood tracking wristband printing and logging, along with amending, updating or completely rewriting previously unseen and outdates web applications, at times within a strict time constraint. </h5> </div>
+                  <div><h4>Website and Web App Technologies</h4> <h5>Experience in React, Redux, Node, JavaScript, jQuery, Bootstrap, AJAX, HTML5, SASS, CSS, .NET, with applied knowledge of REST and cloud-based hosting on Heroku.</h5><h5>Past projects have included creating dynamic websites and applications for use with income monitoring, patient blood tracking and personal hobby projects, along with amending, updating or completely rewriting previously unseen and outdated web applications, at times within a strict time constraint. </h5> </div>
                 ]
             },
             {
@@ -50,7 +50,7 @@ export const CVinfo = {
                 "title": "Databases",
                 "type": "info",
                 "info": [
-                  <div><h4>Database Creation and Management</h4> <h5>Oracle SQL, PL/SQL, MongoDB, APEX. </h5>  <h5>Returning, updating and amending infobase info through scripts, packages and procedures. Creating user defined functions and triggers and improving infobase integrity, security and performance via use of Windows Server 2008 IIS. </h5>  </div>
+                  <div><h4>Database Creation and Management</h4> <h5>Oracle SQL, PL/SQL, MongoDB, APEX. </h5>  <h5>Returning, updating and amending database data through scripts, packages and procedures. Creating user defined functions and triggers, and improving database integrity, security and performance via use of Windows Server 2008 IIS.  </h5>  </div>
                 ]
             },
             {
@@ -73,7 +73,7 @@ export const CVinfo = {
                 "title": "Southampton General Hospital",
                 "type": "info",
                 "info": [
-                  <div><h4>Southampton General Hospital</h4><h5>IT Development Analyst - Full Time 06/2014 – 06/2017</h5> <h5>A development analyst role involves managing and maintaining the many systems that improve the efficiency of the hospital on a day to day basis. Being ready to analyse and solve any issues with any of the many interwoven systems that keep the hospital running. Role involves updating old applications and developing new ones in C#.NET along with other web, infobase and server technologies, meeting with other departments regularly to discuss and understand their needs and desires for a new application or system that will improve their work productivity.</h5></div>
+                  <div><h4>Southampton General Hospital</h4><h5>IT Development Analyst - Full Time 06/2014 – 06/2017</h5> <h5>A development analyst role involves managing and maintaining the many systems that improve the efficiency of the hospital on a day to day basis. Being ready to analyse and solve issues with any of the many interwoven systems that keep the hospital running. Role involves updating old applications and developing new ones in C#.NET along with other web, database and server technologies, meeting with other departments regularly to discuss and understand their needs and desires for a new application or system that will improve their work productivity.</h5></div>
                 ]
             },
             {
@@ -81,7 +81,7 @@ export const CVinfo = {
                 "title": "Solent Creatives",
                 "type": "info",
                 "info": [
-                  <div><h4>Solent Creatives</h4><h5>Web Developer – Part Time 08/2013 – 06/2014</h5> <h5> A web developer role involves meeting with clients to discuss and develop an understanding of user requirements together for websites the client wished to have created for them. It could also involve looking into previously existing websites and either updating, fixing or developing them further.</h5></div>
+                  <div><h4>Solent Creatives</h4><h5>Web Developer – Part Time 08/2013 – 06/2014</h5> <h5>A web developer role involves meeting with clients to discuss and develop an understanding of the user’s requirements for web applications that the client wishes to have created for them. It could also involve looking into previously existing websites and either updating, fixing or developing them further.</h5></div>
                 ]
             },
             {
