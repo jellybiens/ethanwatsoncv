@@ -11,7 +11,7 @@ export const CVinfo = {
         "title": "Personal",
         "type": "info",
         "info": [
-                  <div><h4>A competent and enthusiastic Software Developer and Computing graduate from Southampton Solent University with an aptitude for meeting high quality standards in a set time frame.</h4><br />
+                  <div><h4>A competent and enthusiastic full stack developer and Computing graduate from Southampton Solent University with an aptitude for meeting high quality standards in a set time frame.</h4><br />
                   <h4>Energetic and articulate, able to work and deliver whether working on ones own initiative or as a team member. Confident in client facing roles as required.</h4></div>
                 ],
         "_comment": "Looking for a role within a software development environment where technical skills can be applied and developed further.</h4><br />"
@@ -23,44 +23,44 @@ export const CVinfo = {
         "info": [
             {
                 "id": 3,
-                "title": "Agile Development",
+                "title": "Web Technologies",
                 "type": "info",
                 "info": [
-                  <div><h4>Agile Software Development Methodologies</h4> <h5>Applied knowledge and understanding of software development in an Agile environment, making use of test driven development approaches. </h5><h5>Understanding of SCRUM, XP and Adaptive software development methods for producing software in an iterative and incremental fashion, making room for requirement churns.</h5></div>
+                  <div><h4>Web Technologies</h4> <h5>Frontend development experience in React js, Redux, Vanilla JavaScript, jQuery, HTML5, SASS and CSS styling.</h5><h5>Backend development experience in Node, Express, GraphQL, Apollo, Sequelize and .NET.</h5><h5>Past projects have included creating dynamic websites and applications for use with income monitoring, patient blood tracking and personal hobby projects, along with amending, updating or completely rewriting previously unseen and outdated web applications, at times within a strict time constraint.</h5></div>
                 ]
             },
             {
                 "id": 4,
-                "title": "Programming",
+                "title": "Databases",
+                "type": "info",
+                "info": [
+                        <div><h4>Experience in Oracle SQL, PL/SQL, PosgreSQL and APEX.</h4> <h5>Returning, updating and amending database data through scripts, packages and procedures. Creating user defined functions and triggers, and improving database integrity, security and performance, either via dedicated IDEs or backend integration in web applications.</h5></div>
+                      ]
+            },
+            {
+                "id": 5,
+                "title": "Usability and Human Computer Interaction",
+                "type": "info",
+                "info": [
+                  <div><h4>Usability and Human Computer Interaction</h4> <h5>An understanding of what best suits a user’s cognition and perception when interacting with computer software interfaces, with past projects within a hospital framework having to factor in the needs of the visually impaired.</h5><h5>Analysing and evaluating system design requirements and developing prototype software to integrate end users in the development process to further understand and improve software requirements.</h5> </div>
+                ]
+            },
+            {
+                "id": 6,
+                "title": "Agile Software Development Methodologies",
+                "type": "info",
+                "info": [
+                  <div><h4>Agile Software Development Methodologies</h4> <h5>Applied knowledge and understanding of software development in an Agile environment, making use of test driven development approaches.</h5>  <h5>Understanding of SCRUM, XP and Adaptive software development methods for producing software in an iterative and incremental fashion, making room for requirement churns.</h5>  </div>
+                ]
+            },
+			{
+                "id": 7,
+                "title": "Object Orientated Programming",
                 "type": "info",
                 "info": [
                         <div><h4>Object Oriented Programming</h4> <h5>Developing object orientated programs with experience in C#, VB, Python and Java.  </h5><h5>Past projects include the development of web application and booking and time management software with use of GUI libraries and amending or improving previously created programs that contain faults.</h5></div>
                       ]
             },
-            {
-                "id": 5,
-                "title": "Web Technologies",
-                "type": "info",
-                "info": [
-                  <div><h4>Website and Web App Technologies</h4> <h5>Experience in React, Redux, Node, JavaScript, jQuery, Bootstrap, AJAX, HTML5, SASS, CSS, .NET, with applied knowledge of REST and cloud-based hosting on Heroku.</h5><h5>Past projects have included creating dynamic websites and applications for use with income monitoring, patient blood tracking and personal hobby projects, along with amending, updating or completely rewriting previously unseen and outdated web applications, at times within a strict time constraint. </h5> </div>
-                ]
-            },
-            {
-                "id": 6,
-                "title": "Databases",
-                "type": "info",
-                "info": [
-                  <div><h4>Database Creation and Management</h4> <h5>Oracle SQL, PL/SQL, MongoDB, APEX. </h5>  <h5>Returning, updating and amending database data through scripts, packages and procedures. Creating user defined functions and triggers, and improving database integrity, security and performance via use of Windows Server 2008 IIS.  </h5>  </div>
-                ]
-            },
-            {
-                "id": 7,
-                "title": "UI and UX Interaction",
-                "type": "info",
-                "info": [
-                  <div><h4> Usability and Human Computer Interaction</h4> <h5>An understanding of what best suits a user’s cognition and perception when interacting with computer software interfaces, with past projects within a Hospital framework having to factor in the needs of the visually impaired.</h5><h5>Analysing and evaluating system design requirements and developing prototype software to further understand and improve software requirements.</h5></div>
-                ]
-            }
         ]
     },
     {
