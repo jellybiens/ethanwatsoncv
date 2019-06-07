@@ -34,7 +34,7 @@ export const CVinfo = {
                 "title": "Databases",
                 "type": "info",
                 "info": [
-                        <div><h4>Experience in Oracle SQL, PL/SQL, PosgreSQL and APEX.</h4> <h5>Returning, updating and amending database data through scripts, packages and procedures. Creating user defined functions and triggers, and improving database integrity, security and performance, either via dedicated IDEs or backend integration in web applications.</h5></div>
+                        <div><h4>Databases</h4><h5>Experience in Oracle SQL, PL/SQL, PosgreSQL and APEX.</h5> <h5>Returning, updating and amending database data through scripts, packages and procedures. Creating user defined functions and triggers, and improving database integrity, security and performance, either via dedicated IDEs or backend integration in web applications.</h5></div>
                       ]
             },
             {
