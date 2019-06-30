@@ -11,7 +11,7 @@ export const CVinfo = {
         "title": "Personal",
         "type": "info",
         "info": [
-                  <div><h4>A competent and enthusiastic full stack developer and Computing graduate from Southampton Solent University with an aptitude for meeting high quality standards in a set time frame.</h4><br />
+                  <div><h4>A competent and enthusiastic web developer and Computing graduate from Southampton Solent University with an aptitude for meeting high quality standards in a set time frame.</h4><br />
                   <h4>Energetic and articulate, able to work and deliver whether working on ones own initiative or as a team member. Confident in client facing roles as required.</h4></div>
                 ],
         "_comment": "Looking for a role within a software development environment where technical skills can be applied and developed further.</h4><br />"
@@ -37,8 +37,16 @@ export const CVinfo = {
                         <div><h4>Databases</h4><h5>Experience in Oracle SQL, PL/SQL, PosgreSQL and APEX.</h5> <h5>Returning, updating and amending database data through scripts, packages and procedures. Creating user defined functions and triggers, and improving database integrity, security and performance, either via dedicated IDEs or backend integration in web applications.</h5></div>
                       ]
             },
+			{
+                "id": 7,
+                "title": "Object Orientated Programming",
+                "type": "info",
+                "info": [
+                        <div><h4>Object Orientated Programming</h4> <h5>	Past experience in C# and Java, with some basic knowledge of Python.</h5><h5>	Applied experience of Object Orientated languages, using Java at university, C# in a more recent professional environment and basic Python in spare time for hobby projects.</h5></div>
+                      ]
+            },
             {
-                "id": 5,
+                "id": 6,
                 "title": "Usability and Human Computer Interaction",
                 "type": "info",
                 "info": [
@@ -46,20 +54,12 @@ export const CVinfo = {
                 ]
             },
             {
-                "id": 6,
+                "id": 7,
                 "title": "Agile Software Development Methodologies",
                 "type": "info",
                 "info": [
                   <div><h4>Agile Software Development Methodologies</h4> <h5>Applied knowledge and understanding of software development in an Agile environment, making use of test driven development approaches.</h5>  <h5>Understanding of SCRUM, XP and Adaptive software development methods for producing software in an iterative and incremental fashion, making room for requirement churns.</h5>  </div>
                 ]
-            },
-			{
-                "id": 7,
-                "title": "Object Orientated Programming",
-                "type": "info",
-                "info": [
-                        <div><h4>Object Oriented Programming</h4> <h5>Developing object orientated programs with experience in C#, VB, Python and Java.  </h5><h5>Past projects include the development of web application and booking and time management software with use of GUI libraries and amending or improving previously created programs that contain faults.</h5></div>
-                      ]
             },
         ]
     },
@@ -138,7 +138,7 @@ export const CVinfo = {
         "title": "Hobbies and Interests",
         "type": "info",
         "info": [
-          <div><h5>I have played drums for over 15 years, and self-taught guitar for around 10 years. </h5><h5>I like to challenge myself to learn different technical skills, which have ranged in the past from video editing and music production to learning new development technologies. </h5><h5>I am also passionate about travel, tourism and linguistics and enjoy visiting new places, learning about the culture and history and practising my language skills where possible.</h5></div>
+          <div><h5>I have a keen interest in history, geography and languages, having been travelling for the last 2 years around Europe visiting places that interest me in each of these factors.</h5><h5>I have been teaching myself French for the past 4 years and have recently started learning Spanish.</h5><h5>I also play drums and guitar casually in my spare time. </h5></div>
         ]
     }
 ]
